@@ -19,11 +19,11 @@ Works on any of the following operating systems:
 Android(Termux):
     1.Open Termux
     2.Type <pkg install git>
-    3.Type <git clone https://github.com/(this repo link)>
+    3.Type <git clone https://github.com/cryptobooblyk/cbtool.git>
     4.Then open the file directory 
     5.bash cbtool.sh
 
-On Linux you will just type <git clone https://github.com/(this repo link)>
+On Linux you will just type <git clone https://github.com/cryptobooblyk/cbtool.git>
 Then open the file directory 
 bash cbtool.sh
 
