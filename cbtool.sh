@@ -20,11 +20,10 @@ echo -e '\u001B[31;40;1m
 \u001B[37m[\u001B[31m3\u001B[37m]\u001B[36m WebCam Hack               \u001B[37m[\u001B[31m4\u001B[37m]\u001B[36m Subscan
 \u001B[37m[\u001B[31m5\u001B[37m]\u001B[36m DDOS Attack               \u001B[37m[\u001B[31m6\u001B[37m]\u001B[36m How to use ?
 \u001B[37m[\u001B[31m7\u001B[37m]\u001B[36m Remove programs           \u001B[37m[\u001B[31m8\u001B[37m]\u001B[36m Ip Info
-\u001B[37m[\u001B[31m9\u001B[37m]\u001B[36m dorks-eye                 \u001B[37m[\u001B[31m10\u001B[37m]\u001B[36m HackerPro
-\u001B[37m[\u001B[31m11\u001B[37m]\u001B[36m RED_HAWK                 \u001B[37m[\u001B[31m12\u001B[37m]\u001B[36m VirusCrafter
-\u001B[37m[\u001B[31m13\u001B[37m]\u001B[36m Info-Site                \u001B[37m[\u001B[31m14\u001B[37m]\u001B[36m BadMod
-\u001B[37m[\u001B[31m15\u001B[37m]\u001B[36m Facebash                 \u001B[37m[\u001B[31m16\u001B[37m]\u001B[36m DARKARMY
-\u001B[37m[\u001B[31m17\u001B[37m]\u001B[36m AUTO-IP-CHANGER\u001B[0m'
+\u001B[37m[\u001B[31m9\u001B[37m]\u001B[36m HackerPro                 \u001B[37m[\u001B[31m10\u001B[37m]\u001B[36m RED_HAWK
+\u001B[37m[\u001B[31m11\u001B[37m]\u001B[36m VirusCrafter             \u001B[37m[\u001B[31m12\u001B[37m]\u001B[36m Info-Site
+\u001B[37m[\u001B[31m13\u001B[37m]\u001B[36m Facebash                 \u001B[37m[\u001B[31m14\u001B[37m]\u001B[36m DARKARMY
+\u001B[37m[\u001B[31m15\u001B[37m]\u001B[36m AUTO-IP-CHANGER\u001B[0m'
 
 read -p $'\u001B[37mTransaction number: \u001B[0m' islem
 
@@ -107,17 +106,6 @@ case "$islem" in
 
     9|09)
         clear
-        echo -e "\u001B[47;3;35m Installing dorks-eye...\u001B[0m"
-        cd Tools
-        git clone https://github.com/BullsEye0/dorks-eye.git || true
-        cd dorks-eye
-        pip install -r requirements.txt --break-system-packages || true
-        python3 dorks-eye.py
-        cd ../..
-        ;;
-
-    10|010)
-        clear
         echo -e "\u001B[47;3;35m Installing HackerPro...\u001B[0m"
         pkg install python2 -y
         cd Tools
@@ -128,11 +116,11 @@ case "$islem" in
         cd ../..
         ;;
 
-    11|011)
+    10|010)
         install_tool "https://github.com/Tuhinshubhra/RED_HAWK.git" "php rhawk.php"
         ;;
 
-    12|012)
+    11|011)
         clear
         echo -e "\u001B[47;3;35m Installing VirusCrafter...\u001B[0m"
         cd Tools
@@ -142,21 +130,11 @@ case "$islem" in
         cd ../..
         ;;
 
-    13|013)
+    12|012)
         install_tool "https://github.com/king-hacking/info-site.git" "bash info.sh"
         ;;
 
-    14|014)
-        pkg install php php-curl -y
-        cd Tools
-        git clone https://github.com/MrSqar-Ye/BadMod.git || true
-        cd BadMod
-        chmod +x INSTALL BadMod.php 2>/dev/null || true
-        php BadMod.php
-        cd ../..
-        ;;
-
-    15|015)
+    13|013)
         clear
         echo -e "\u001B[47;3;35m Installing Facebash...\u001B[0m"
         cd Tools
@@ -171,7 +149,7 @@ case "$islem" in
         cd ../..
         ;;
 
-    16|016)
+    14|014)
         pkg install python2 -y
         cd Tools
         git clone https://github.com/D4RK-4RMY/DARKARMY || true
@@ -181,7 +159,7 @@ case "$islem" in
         cd ../..
         ;;
 
-    17|017)
+    15|015)
         clear
         echo -e "\u001B[47;3;35m Installing Auto IP Changer (needs ROOT)\u001B[0m"
         pkg install tor root-repo -y
@@ -195,7 +173,7 @@ case "$islem" in
 
     *)
         clear
-        echo -e '\u001B[41m❌ Wrong number! Try 1-17\u001B[0m'
+        echo -e '\u001B[41m❌ Wrong number! Try 1-15\u001B[0m'
         sleep 2
         bash alhack.sh
         ;;
